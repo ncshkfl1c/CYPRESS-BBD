@@ -1,0 +1,21 @@
+{
+  "name": "bbd-test",
+  "version": "1.0.0",
+  "description": "HAHA",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cy:run": "npx cypress run -e \"TAGS=not @ignore-this\"",
+    "cy:open": "npx cypress open -e \"TAGS=not @ignore-this\""
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^15.0.0",
+    "@bahmutov/cypress-esbuild-preprocessor": "^2.1.5"
+  },
+  "devDependencies": {
+    "cypress": "^12.4.1",
+    "cypress-wait-until": "^1.7.2"
+  }
+}
