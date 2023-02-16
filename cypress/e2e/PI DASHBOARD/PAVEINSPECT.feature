@@ -28,7 +28,6 @@ Feature: PaveInspectDashBoard
             | role  | userName     | password | email                    | fName | lName |
             | ADMIN | TestAlrUser  | 123456   | tu.dao@discoveryloft.com | tu    | dao   |
             | USER  | InvalidEmail | 123456   | tu.dao@discoveryloft/com | tu    | dao   |
-
-        Then I can login
+        Then I can login successfully
             | userName    | passWord |
             | TestAlrUser | 123456   |

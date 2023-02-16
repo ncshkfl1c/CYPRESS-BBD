@@ -15,7 +15,7 @@
     "@bahmutov/cypress-esbuild-preprocessor": "^2.1.5"
   },
   "devDependencies": {
-    "cypress": "^12.4.1",
+    "cypress": "^12.5.1",
     "cypress-wait-until": "^1.7.2"
   }
 }

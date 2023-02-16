@@ -22,7 +22,7 @@ import PaveInspect, {
 var utc = new Date().toJSON().slice(0, 10).replace(/-/g, "_");
 
 Given("I open intro Page {string}", (url) => {
-  cy.clearCookies()
+  cy.clearCookies();
   cy.visit(url);
   cy.url().should("eq", url);
 });
@@ -108,7 +108,7 @@ Then("I Check UI and function in Filter and Toast", () => {
   modalPopup.confirmBtn().click();
   headerElement.alert().should("have.class", `alertbox-error`);
 
-  // Check ID if have valude then do something
+  // Check ID if have value then do something
   purchaseElement.inValidFeeBack().each(($invalid) => {
     let invalidNeghbor = cy.wrap($invalid).siblings().invoke("attr", "id");
     invalidNeghbor.then(($id) => {
@@ -199,7 +199,7 @@ When("I create account", (account) => {
   });
 });
 
-Then("I can login", (account) => {
+Then("I can login successfully", (account) => {
   account.hashes().forEach((acc) => {
     PaveInspect.validateUserLogin(acc.userName, acc.passWord);
   });
