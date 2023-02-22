@@ -22,7 +22,7 @@ pipeline {
         stage('Testing') {
             steps {
                 bat 'npm i'
-                bat "npx cypress run"
+                bat 'npx cypress run'
             }
         }
         /* groovylint-disable-next-line DuplicateStringLiteral */
