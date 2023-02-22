@@ -36,7 +36,7 @@ pipeline {
     post {
         always {
             /* groovylint-disable-next-line LineLength */
-            publishHTML([allowMissing: false, alwaysLinkToLastBuild: false, keepAll: true, reportDir: 'cypress/report', reportFiles: 'index.html', reportName: 'HTML Report', reportTitles:'hello'])
+            publishHTML([allowMissing: false, alwaysLinkToLastBuild: false, keepAll: true, reportDir: 'cypress/report', reportFiles: 'index.html', reportName: 'HTML Report', reportTitles:'hello', includes: '**/**'])
         }
     }
 }
