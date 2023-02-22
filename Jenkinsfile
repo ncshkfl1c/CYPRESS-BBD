@@ -14,7 +14,7 @@ pipeline {
     // }
 
     stages {
-        stage('Deloying') {
+        stage('Building') {
             steps {
                 echo 'Building the application'
             }
@@ -26,7 +26,7 @@ pipeline {
             }
         }
         /* groovylint-disable-next-line DuplicateStringLiteral */
-        stage('Deloying') {
+        stage('Deloying APP') {
             steps {
                 echo 'Deploy the application'
             }
