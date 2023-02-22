@@ -9,9 +9,9 @@ pipeline {
         choice(name: 'BROWSER', choices: ['chrome', 'firefox', 'edge'], description: 'Choice the browser you want to execute')
     }
 
-    options {
-        ansiColor('xterm')
-    }
+    // options {
+    //     ansiColor('xterm')
+    // }
 
     stages {
         stage('Deloying') {
