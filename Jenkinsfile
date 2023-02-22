@@ -2,7 +2,7 @@
 pipeline {
     agent any
 
-    parameter {
+    parameters {
         /* groovylint-disable-next-line LineLength */
         string(name: 'SPEC', defaultValue: 'BBD-TEST/cypress/e2e/**/**', description: 'Enter the scripts path that you want to excute')
         /* groovylint-disable-next-line LineLength */
