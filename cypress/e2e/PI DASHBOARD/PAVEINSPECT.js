@@ -173,7 +173,7 @@ Then("I check Validate when I create new user", () => {
 When("I create account", (account) => {
   let accoutArr = account.hashes();
   cy.log(accoutArr);
-  account.hashes().forEach((acc, index) => {
+  accoutArr.forEach((acc, index) => {
     cy.visit("https://paveinspect.com/business/users");
     manageUser.createUserBtn().click();
     createUser(

@@ -20,7 +20,7 @@ async function setupNodeEvents(on, config) {
 
 module.exports = defineConfig({
   e2e: {
-    projectId:"npx cypress run --record --key 22146235-1f61-4db6-9deb-0dddcaa9716c",
+    projectId:"xvv69g",
     viewportWidth: 1920,
     viewportHeight: 1080,
     specPattern: "**/*.feature",
